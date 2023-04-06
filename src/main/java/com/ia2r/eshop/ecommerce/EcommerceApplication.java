@@ -51,7 +51,7 @@ public class EcommerceApplication {
                     "Aerial Gundam",
                     49.00,
                     50,
-                    "PG"
+                    "HG"
             ));
             productService.save(new Product(
                     2l,
@@ -91,12 +91,12 @@ public class EcommerceApplication {
             ));
             productService.save(new Product(
                     6l,
-                    "EVA-01 Evangelion 01 1/100",
-                    "https://riseofgunpla.com/wp-content/uploads/2021/09/1000163907_6-1024x1024.webp",
-                    "EVA 01",
-                    99.00,
+                    "Barbatos Gundam 1/100",
+                    "https://riseofgunpla.com/wp-content/uploads/2021/12/156_4789_s_ezg7netm7izmo986ggr0b39wy470-1024x1024.webp",
+                    "Barbatos Gundam",
+                    175.00,
                     111,
-                    "RG"
+                    "MG"
             ));
             productService.save(new Product(
                     7l,
