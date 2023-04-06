@@ -1,0 +1,58 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+# React
+
+# dependencies
+src/main/js/ecommerce/node_modules
+src/main/js/ecommerce/.pnp
+src/main/js/ecommerce.pnp.js
+
+# testing
+src/main/js/ecommerce/coverage
+
+# production
+src/main/js/ecommerce/build
+
+# misc
+src/main/js/ecommerce/.DS_Store
+src/main/js/ecommerce/.env.local
+src/main/js/ecommerce/.env.development.local
+src/main/js/ecommerce/.env.test.local
+src/main/js/ecommerce/.env.production.local
+
+src/main/js/ecommerce/npm-debug.log*
+src/main/js/ecommerce/yarn-debug.log*
+src/main/js/ecommerce/yarn-error.log*
