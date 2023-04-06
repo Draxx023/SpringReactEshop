@@ -14,15 +14,15 @@ public class Product {
     @Basic(optional = false)
     private String name;
 
-    @NotNull(message = "Product name is required.")
+    @NotNull(message = "Product imgsrc is required.")
     @Basic(optional = false)
-    private String imgSrc;
+    private String imageSrc;
 
-    private String imgAlt;
+    private String imageAlt;
 
     private Double price;
 
-    private String gundam_class;
+    private String Grade;
 
     public int getQuantity() {
         return quantity;
@@ -34,13 +34,25 @@ public class Product {
 
     private int quantity;
 
-    public Product(Long id, @NotNull(message = "Product name is required.") String name, @NotNull(message = "Product name is required.") String imgSrc, String imgAlt,  Double price, int quantity, String gundam_class) {
+    public void setImageAlt(String imageAlt) {
+        this.imageAlt = imageAlt;
+    }
+
+    public String getGrade() {
+        return Grade;
+    }
+
+    public void setGrade(String grade) {
+        Grade = grade;
+    }
+
+    public Product(Long id, @NotNull(message = "Product name is required.") String name, @NotNull(message = "Product name is required.") String imgSrc, String imgAlt, Double price, int quantity, String gundam_class) {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.imgSrc = imgSrc;
-        this.imgAlt = imgAlt;
-        this.gundam_class = gundam_class;
+        this.imageSrc = imgSrc;
+        this.imageAlt = imgAlt;
+        this.Grade = gundam_class;
         this.quantity = quantity;
     }
 
@@ -71,16 +83,16 @@ public class Product {
         this.price = price;
     }
 
-    public String getImgSrc() {
-        return imgSrc;
+    public String getImageSrc() {
+        return imageSrc;
     }
 
-    public String getImgAlt() {
-        return imgAlt;
+    public String getImageAlt() {
+        return imageAlt;
     }
 
-    public void setImgSrc(String url) {
-        this.imgSrc = url;
+    public void setImageSrc(String url) {
+        this.imageSrc = url;
     }
 
 
